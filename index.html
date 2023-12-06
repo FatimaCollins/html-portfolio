@@ -1,71 +1,198 @@
-<!-- TODO 1: Create the HTML Boilerplate -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <nav>
-    <ul>
-    <li><a href="./" target="_blank">Home</a></li>
-    <li><a href="./public/about.html" target="_blank">About</a></li>
-    <li><a href="./public/portfolio.html" target="_blank">Portfolio</a></li>
-    <li><a href="./public/contact.html" target="_blank">Contact Me</a></li>
-  </ul> 
-  </nav>
-  <h1> Fatima's Portfolio</h1>
-  <h2>Full Stack Web Developer</h2>
-  <div>
-    <img src="./assets/images/Fatima6.png" alt="">
-  </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Personal Portfolio Website</title>
+    <!-- ICONSCOUT CDN -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css"
+    />
 
-  <!-------NAV BAR------>
-<style>
-  img{
-    margin-top: 40px;
-    width: 580px;
-    height: 500px;
-    border-radius: 20px;;
-  }
-  ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
+    <!-- GOOGLE FONTS (Nunito Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Libre+Baskerville:wght@400;700&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,600&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
 
-li {
-  float: left;
-}
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="container nav__container">
+        <a href="index.html" class="nav__logo">
+          <img width="50px" height="50px" src="./images/Empty.png" alt="">
+        </a>
+        <p class="logo-title">My Portfolio</p>
 
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
+        <ul class="nav__menu">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="#services">ABOUT</a></li>
+          <li><a href=".\HTML-CSS-JAVASCRIPT\portfolio\index.html">PORTFOLIO</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+          <li>
+            <a href="./images/cv.pdf" class="btn btn-primary" download
+              ><i class="uil uil-download-alt"></i> Download Resume</a
+            >
+          </li>
+        </ul>
 
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: #111;
-}
+        <button type="button" id="open-menu-btn"><i class="uil uil-bars"></i></button>
+        <button type="button"id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+      </div>
+    </nav>
+    <!--================== END OF NAVBAR =================-->
 
-/* NAV Bar End */
-</style>
-</body>
+    <header>
+      <div class="container header__container">
+        <div class="header__left">
+          <div>
+            
+            <h1>Fatima<br />Collins</h1>
+            <h3>CEO & Founder of Genetic Resistance Studios</h3>
+            <p>
+              A Full Stack Web, UI/UX Designer and Software Engineer. Specializing in AI Technology to Enhance Customer Experience!
+             
+            </p>
+            <a href="#contact" class="btn btn-primary btn-lg">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="header__right">
+          <div class="header__image">
+            <img src="./images/avatar.jpg" />
+          </div>
+          <div class="header__right-bg"></div>
+          <ul class="header__socials">
+            <li>
+              <a href="https://facebook.com" target="_blank"
+                ><i class="uil uil-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://twitter.com" target="_blank"
+                ><i class="uil uil-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://instagram.com" target="_blank"
+                ><i class="uil uil-instagram"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!--================== END OF HEADER =================-->
+    <section id="services">
+      <div class="container services__container">
+        <div class="services__left">
+          <img src="./images/Empty.png" alt="logo">
+          <h4>Hard Knock Education</h4>
+          <small>
+            As a highly motivated and adaptable individual, I've successfully transitioned from a 26-year career in nursing to pursue my passion for full stack web development and software engineering to create a life-changing platform for my users.
+          </small>
+        </div>
+
+        <div class="services__right">
+          <h2>
+            Software Designer and Developer, Specializing in UI/UX, HTML, CSS, Javascript, Node, React, MongoDB, Web3 and Decentrilized Apps.
+          </h2>
+          <div class="services__cards">
+            <div class="services__card">
+              <span class="services__card-icon"
+                ><i class="uil uil-layers-alt"></i
+              ></span>
+              <h5>Software Design</h5>
+              <a class="learn" href="#">Learn More <i class="uil uil-arrow-right"></i></a>
+            </div>
+
+            <div class="services__card">
+              <span class="services__card-icon"
+                ><i class="uil uil-browser"></i
+              ></span>
+              <h5>Website Development</h5>
+              <a class="learn" href="#">Learn More <i class="uil uil-arrow-right"></i></a>
+            </div>
+
+            <div class="services__card">
+              <span class="services__card-icon"
+                ><i class="uil uil-lightbulb"></i
+              ></span>
+              <h5>Artficial Intelligence</h5>
+              <a class="learn" href="#">Learn More <i class="uil uil-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--================== END OF SERVICES =================-->
+
+    
+
+    <section id="portfolios">
+      <h2>My Coding Adventures</h2>
+      <p class="lead">
+        Below are a list of projects that I have completed over my journey for knowledge. Please feel free to interact with the demos and I hope you enjoy the experience.
+      </p>
+      <div class="container portfolios__container">
+      </div>
+    </section>
+    <!--================== END OF TESTIMONIALS =================-->
+
+    <section id="contact">
+      <div class="container contact__container">
+        <div class="contact__left">
+          <h2>FATIMA COLLINS</h2>
+          <p>
+            Contact me anytime! Always open to networking and building relationships.
+          </p>
+          <ul class="contact__socials">
+            <li>
+              <a href="https://facebook.com" target="_blank"
+                ><i class="uil uil-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://twitter.com" target="_blank"
+                ><i class="uil uil-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://behance.net" target="_blank"
+                ><i class="uil uil-instagram"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+
+        <form action="https://geneticresistancestudios.com" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea
+            name="message"
+            rows="6"
+            placeholder="Message"
+            required
+          ></textarea>
+          <button type="submit" class="btn">
+            Send <i class="uil uil-arrow-right"></i>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <small> Copyright &copy; Fatima Collins CEO 2013</small>
+    </footer>
+
+    <script src="./portfolios.js"></script>
+    <script src="./main.js"></script>
+  </body>
 </html>
 
-<!-- TODO 2: Add Your previous projects' HTML into the public folder -->
-
-<!-- TODO 3: Take screenshots of your project previews and add the images to the images folder -->
-
-<!-- TODO 4: Add titles/subtitles etc. -->
-
-<!-- TODO 5: Add a link to the project pages -->
 
 <!-- TODO 6: Add images to show the project previews
 HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
